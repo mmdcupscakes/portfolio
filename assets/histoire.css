@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+#menu { 
+    grid-area: 1 / 1 / 2 / 4; 
+    background-color: #47CCDD;
+    height: 65px;
+    padding: 0 100px 0 100px;
+}
+#info { 
+    grid-area: 2 / 1 / 3 / 2; 
+    width: 350px;
+    /*height: calc(100vh - 65px);*/
+    background: transparent url(img/fond-information.png) no-repeat top center;
+    background-size: cover;
+}
+#profil { 
+    grid-area: 2 / 2 / 3 / 4; 
+    /*background: transparent url(assets/img/Fond_2.jpg) no-repeat center center;*/
+    background-size: cover;
+    width: calc(100vw - 350px);
+}
+
+.morning-bg {
+    background-image: url('img/Fond_2.jpg');
+}
+
+.evening-bg {
+    background-image: url('img/Fond_1.jpg');
+}
+
+
+.menu_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+.menu_nav img {
+    height: 33px;
+    width: auto;
+}
+
+.menu_nav span, a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Roboto Condensed';
+}
+.actualités, .histoire {
+    width: 350px;
+    height: 240px;
+    overflow-x: scroll;
+    display: flex;
+    overflow-y: hidden;
+}
+
+#card_list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card_list_item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 10px;
+    /*background: linear-gradient(transparent, #00000078), url(assets/img/miniature-1-.jpg) no-repeat top center;
+    background-size: cover;*/
+    border: 3px white solid;
+}
+.image1 {
+    background: linear-gradient(transparent, #00000078), url(img/miniature-1-.jpg) no-repeat top center;
+    background-size: cover;
+}
+.image2 {
+    background: linear-gradient(transparent, #00000078), url(img/miniature-2.jpg) no-repeat top center;
+    background-size: cover;
+}
+.image3 {
+    background: linear-gradient(transparent, #00000078), url(img/Fond_1.jpg) no-repeat top center;
+    background-size: cover;
+}
+.image4 {
+    background: linear-gradient(transparent, #00000078), url(img/Fond_6.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#card_list .card_list_item .inner_item {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    margin: 10px;
+    color: white;
+    
+}
+.inner_item h3 {
+    font-family: 'Exo 2';
+    font-size: 1,5em;
+    margin-bottom: 5px;
+}
+.inner_item p {
+    font-family: 'Roboto Condensed';
+    font-size: 1em;
+    font-weight: 300;
+}
+.nom-info {
+    background: transparent url(img/fond-information-h1.png) no-repeat top center;
+    background-size: cover;
+    height: 90px;
+    text-align: center;
+    color: white;
+    font-family: 'Exo 2';
+    font-size: 2,5em;
+}
+.text-info {
+    margin: 0 0 10px 10px;
+    color: #240A5B;
+}
+.text-info h2 {
+    font-family: 'Exo 2';
+    font-size: 2em;
+}
+.text-info h3 {
+    font-family: 'Roboto Condensed';
+    font-size: 1em;
+    font-weight: 400;
+}
+.img-personnage {
+    display: flex;
+    justify-content: space-around;
+}
+#character-user {
+    background: transparent url(img/fullbody.png) no-repeat center center;
+    background-size: cover;
+    height: 700px;
+    width: 350px;
+    align-self: center;
+}
+.information {
+    align-self: center;
+}
+
+#ressource {
+display: flex;
+position: absolute;
+top: 100px;
+right: 30px;
+}
+#plume, #cash {
+display: flex;
+background-color: white;
+border-radius: 50px;
+margin: 10px;
+padding: 5px 15px 5px 15px;
+text-align: center;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto Condensed';
+font-size: 1em;
+color: #240A5B;
+}
+#plume img, #cash img {
+width: 40px;
+}

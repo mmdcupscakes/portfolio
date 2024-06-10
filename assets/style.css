@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Exo 2', bold; 
+}
+#content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+#background-container1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'arrière-plan en arrière des autres contenus */
+    background-image: url("./img/Fond_4.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 20%;	
+}
+#background-container2 {
+    position: absolute;
+    height: 100%;
+    background-image: url("./img/Fond_7.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    top: 730px;
+}
+#background-container3 {
+    position: absolute;
+    height: 85%;
+    background-image: url("./img/Fond_3.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    top: 1460px;
+    opacity: 10%;
+}
+.background div {
+    height: 750px; /* Hauteur de chaque image de fond */
+    width: 100%; /* Prend toute la largeur de son conteneur */
+    background-size: cover;
+    margin:0;
+    object-fit: cover;
+}
+#logo {
+    display: flex;
+    max-width: 50%;
+    margin: 50px 50px;
+    align-items: center;
+}
+#logo img {
+    object-fit: cover;
+    width: 350px;
+}
+/* Style général de la section */
+#section1 {
+    padding: 20px; /* Ajoute un espacement intérieur */
+    display: flex; /* Utilise le modèle flexbox */
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    box-sizing: content-box;
+}
+
+/* Style pour le titre H2 */
+#section1 h2 {
+    color: #240A5B; /* Couleur du texte */
+    font-size: 2.5em; /* Taille de police */
+    margin: 10px; /* Espacement en bas */
+}
+
+/* Style pour la div contenant les boutons */
+#inscription-button {
+    margin-bottom: 10px; /* Espacement en bas */
+    display: flex;
+}
+
+/* Style pour les boutons */
+#section1 a {
+    width: 280px; /* Largeur du bouton */
+    height: 60px; /* Hauteur du bouton */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    border: none; /* Pas de bordure */
+    cursor: pointer; /* Curseur au survol */
+    margin: 20px; /* Marge autour du bouton */
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+}
+#section1 a:nth-child(1){
+    background-color: #FAD2E1;
+    color: #511A6D;
+}
+#section1 a:nth-child(2){
+    background-color: #47CCDD;
+    color: #fff;
+    
+}
+/* Style pour le paragraphe */
+#content p {
+    font-size: 1em; /* Taille de police */
+    font-family: 'roboto';
+    color: #240A5B;
+}
+p {
+    line-height: 1.5; /* Hauteur de ligne */
+    margin: 20px; /* Espacement */
+}
+#icon img {
+    height: 100px;
+}
+
+#section2 {
+    margin-left: 50px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 300px 300px;
+
+}
+
+#section2 img {
+    height: 360px;
+    width: 270px;
+    object-fit: cover;
+    display: flex;
+    margin-bottom: 5px;
+    z-index: -1;
+}
+
+#section3 {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 20px;
+}
+
+#section3 .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 100%;
+    align-items: center;
+
+}
+.list-avatar {
+    justify-self: left;
+
+}
+ul {
+    list-style-type: none;
+}
+#section3 ul {
+    width: 115px;
+    margin: 20px;
+}
+#section3 .avatar img {
+    height: 100%;
+
+}
+
+#section3 > img {
+    height: 650px;
+    width: auto;
+    display: flex;
+    margin: 20px;
+    position: relative;
+    justify-content: center;
+}
+#section4 {
+    padding: 50px; /* Ajoute un espacement intérieur */
+    display: flex; /* Utilise le modèle flexbox */
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+#section4 h3 {
+    text-align: center;
+    font-size: 2.3em;
+    margin: 20px;
+    color: #240A5B;
+}
+.description {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content-texte {
+    padding: 20px;
+    margin: 10px;
+    background-color: #CAEBF2bf;
+    border-radius: 30px;
+}
+.photo {
+    display: flex;
+    display: grid;
+    gap: 10px;
+grid-template-columns: 1fr 1fr;
+}
+.photo img {
+    width: 300px;
+    height: 200px;
+    object-fit:cover;
+    display: flex;
+    border-radius: 30px;
+}
+#section4 ul {
+    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
+padding: 10px;
+justify-items: center; /* Centre les éléments horizontalement dans chaque colonne */
+list-style-type: none; /* Masquer les puces standard */
+    padding-left: 0; /* Supprimer le décalage par défaut */
+    
+font-size: 1.25em;
+}
+.liste-description {
+    justify-content: center;
+}
+
+
+
+/* Appliquer l'image de puce uniquement aux deux premiers éléments <li> */
+#section4 ul li:nth-child(odd) {
+    background-image: url("./img/icon4.png"); /* Image utilisée comme puce */
+    background-size: 30px auto; /* Taille de l'image de puce */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    padding-left: 30px; /* Décalage à gauche pour faire de la place pour l'image */
+    line-height: 24px; /* Ajuster la hauteur de ligne pour aligner le texte */
+}
+
+#section4 ul li:nth-child(2) {
+    background-image: url("./img/icon5.png"); /* Image utilisée comme puce */
+    background-size: 30px auto; /* Taille de l'image de puce */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    padding-left: 30px; /* Décalage à gauche pour faire de la place pour l'image */
+    line-height: 24px; /* Ajuster la hauteur de ligne pour aligner le texte */
+}
+#section4 ul li:nth-child(4) {
+    background-image: url("./img/icon6.png"); /* Image utilisée comme puce */
+    background-size: 30px auto; /* Taille de l'image de puce */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    padding-left: 30px; /* Décalage à gauche pour faire de la place pour l'image */
+    line-height: 24px; /* Ajuster la hauteur de ligne pour aligner le texte */
+    width: 408px;
+}
+
+/* Autres styles pour les éléments <li> de la liste */
+#section4 ul li {
+    line-height: 1.6; /* Espacement entre les éléments */
+
+}
+
+footer {
+
+    width: 100%;
+    position: relative;
+
+}
+footer form {
+    display: flex; /* Utilise le modèle flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+
+}
+.formulaire {
+/* Hauteur de la section, par exemple 100% de la hauteur de la vue */
+    padding: 20px; /* Ajoute un espacement intérieur */
+    box-sizing: border-box; /* Inclut le padding dans la hauteur */
+    text-align: center; /* Centre le contenu du formulaire */
+
+}
+.form-example input[type="email"] {
+    width: 400px; /* Prend toute la largeur disponible */
+    height: 65px;
+    padding: 10px; /* Rembourrage intérieur */
+    font-size: 16px; /* Taille de police */
+    border: 2px solid #47CCDD; /* Bordure légère */
+    border-radius: 30px; /* Coins arrondis pour l'entrée */
+    box-sizing: border-box; /* Inclut la bordure dans la largeur */
+}
+.form-example input[type="submit"] {
+    width: 160px; /* Prend toute la largeur disponible */
+    height: 65px;
+    padding: 12px; /* Rembourrage intérieur */
+    font-size: 1.5em; /* Taille de police */
+    border: none; /* Pas de bordure */
+    border-radius: 30px; /* Coins arrondis pour le bouton */
+    background-color: #47CCDD; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease; /* Transition en douceur pour le changement de couleur */
+}
+.form-example input[type="submit"]:hover {
+    background-color: #3caab3; /* Couleur de fond au survol */
+}
+.txt-footer {
+    color: #47CCDD;
+}
+
+.txt-footer h2 {
+    font-family: 'Exo 2' 'bold';
+    font-size: 2em;
+}
+.txt-footer {
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    text-align: center;
+}
+#footer-fond {
+    width: 100%;
+    display: flex;
+}
+#footer-fond1{
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+#txt-cookies {
+    z-index: 3;
+    position: absolute;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    bottom: 0px;
+    position:absolute;
+}
+#txt-cookies ul {
+    justify-content: space-between 100px;
+    font-family: 'Roboto Condensed';
+    font-size: 1.2em;
+    color: #240A5B;
+}
+
+#txt-cookies li {
+    margin: 30px;
+}
+
+#txt-cookies ul:nth-child(1) {
+    text-align: left;
+    margin-left: 60px;
+}
+#txt-cookies ul:nth-child(2) {
+    text-align: right;
+    margin-right: 60px;
+}

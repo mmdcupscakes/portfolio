@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Histoire</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/histoire.css">
+</head>
+<body>
+    <div id="app">
+
+        <div id="menu">
+            <ul class="menu_nav">
+                <li class="home"><a href="#"><img src="./assets/img/icon-character.png" alt=""/><span>Personnages</span></a></li>
+                <li class="home"><a href="gameplay.html"><img src="./assets/img/icon-story.png" alt=""/><span>Histoire</span></a></li>
+                <li class="home"><a href=""><img src="./assets/img/icon-illustration.png" alt=""/><span>Illustration</span></a></li>
+                <li class="home"><a href="accueil.html"><img src="./assets/img/icon-home.png" alt=""/><span>Accueil</span></a></li>
+                <li class="home"><a href=""><img src="./assets/img/icon-shop.png" alt=""/><span>Boutique</span></a></li>
+                <li class="home"><a href=""><img src="./assets/img/icon-money.png" alt=""/><span>Achat</span></a></li>
+                <li class="home"><a href=""><img src="./assets/img/icon-settings.png" alt=""/><span>Paramètres</span></a></li>
+            </ul>
+        </div>
+
+        <div id="info">
+            <div class="parent">
+                <div class="menu">
+                    <div class="box-menu">
+                            <div class="nom-info">
+                                <H1>Histoire</H1>
+                                <img src="" alt=""/>
+                            </div>
+                            <div class="text-info">
+                                <h2>
+                                    Histoire
+                                </h2>
+                                <h3>
+                                    Continue ton histoire à Angelea
+                                </h3>
+                            </div>
+                            <div class="actualités">
+                                <ul id="card_list">
+                                    <li class="card_list_item image3">
+                                        <div class="inner_item">
+                                            <h3>Chapitre 1</h3>
+                                            <p>Bienvenue à Angelea !</p>
+                                        </div>
+                                    </li>
+                                    <li class="card_list_item image4">
+                                        <div class="inner_item">
+                                            <h3>Chapitre 2</h3>
+                                            <p>Premier cours agité !</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="text-info">
+                                <h2>
+                                    Illustrations
+                                </h2>
+                                <h3>
+                                    Retrouve tes illustrations obtenues lors de ton histoire
+                                </h3>
+                            </div>
+                            <div class="histoire"> 
+                                <ul id="card_list">
+                                    <a href="gameplay.html">
+                                        <li class="card_list_item image3">
+                                            <div class="inner_item">
+                                                <h3>Chapitre 1</h3>
+                                            </div>
+                                         </li>
+                                    </a>
+                                    <li class="card_list_item image4">
+                                        <div class="inner_item">
+                                        <h3>Chapitre 2</h3>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+        <div id="profil">
+            <div id="character-user"></div>
+            <div id="ressource">
+                <div id="plume">
+                    <img src="./assets/img/icon7.png" alt="plume"/>
+                    <p>100</p>
+                </div>
+                <div id="cash">
+                    <img src="./assets/img/icon8.png" alt="cash"/>
+                    <p>100</p>
+                </div>
+            </div>
+        </div>
+<script>
+    function changeBackground() {
+    var div = document.getElementById('profil');
+    var currentHour = 19;//new Date().getHours();
+
+    if (currentHour >= 6 && currentHour < 17) {
+        // Matin
+        div.classList.remove('evening-bg');
+        div.classList.add('morning-bg');
+    } else {
+        // Soir
+        div.classList.remove('morning-bg');
+        div.classList.add('evening-bg');
+    }
+}
+
+// Appeler la fonction lorsque la page est chargée
+window.onload = changeBackground;
+</script>
+    </div>
+    <style type="text/css">
+        
+    </style>
+</body>
+</html>
